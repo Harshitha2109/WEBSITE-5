@@ -1,0 +1,287 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+#firstpage{
+    background:linear-gradient(rgba(0,0,0,0.5),rgb(150, 125, 0)), url(images/a.jpeg);
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+    width:100%;
+}
+.logo{
+    position:absolute;
+    top:4%;
+    left:10%;
+}
+.text{
+    text-align:center;
+    color:#fff;
+    padding-top:180px;
+
+}
+.text h1{
+    font-size: 80PX;
+    font-family: 'Kaushan Script', cursive;
+
+}
+.text P{
+    font-size: 20PX;
+    font-style: italic;
+
+
+}
+.text-btn{
+    MARGIN:70PX auto 0;
+
+}
+.text-btn a{
+    width:150px;
+    text-decoration:none;
+    display: inline-block;
+    margin: 0 10px;
+    padding:12px 0;
+    color:#fff;
+    border:.5px solid #fff;
+    position:relative;
+    z-index: 1;
+    transition: color 0.5s;
+
+
+}
+.text-btn a span{
+    width:0;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background: #fff;
+    z-index: -1;
+    transition:0.5s;
+}
+.text-btn a:hover span{
+    width:100%;
+
+}
+.text-btn a:hover {
+    color:#000;
+}
+.texts{
+    text-align:center;
+    padding-bottom:70px;
+
+}
+.texts p{
+    margin:auto;
+    font-size:20px;
+    color:rgb(150, 125, 0);
+    font-weight:bold;
+    POSITION:RELATIVE;
+    z-index:1;
+    display:inline-block;
+
+}
+.texts p::after{
+content:'';
+width:50px;
+height:35px;
+background:linear-gradient(rgb(150, 125, 0),#fff);
+position:absolute;
+top:-20px;
+left:0;
+z-index:-1;
+transform: rotate(10deg);
+border-top-left-radius:35px ;
+border-bottom-right-radius: 35px;
+}
+#secpage{
+    width:100%;
+    padding:70px 0;
+    background:#efefef;
+
+}
+.menus{
+    width:80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.sections{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color:#fff;
+    position:relative;
+
+}
+
+.sections img{
+    width:100%;
+    border-radius: 7px;
+
+}
+
+.overlay{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    border-radius: 7px;
+    cursor: pointer;
+    background:linear-gradient(rgba(0,0,0,0.5),rgb(150, 125, 0));
+    opacity:0;
+    transition:1s;
+
+}
+.sections:hover .overlay{
+    opacity: 1;
+}
+.desc{
+    width:80%;
+    position:absolute;
+    bottom:0;
+    left:50%;
+    opacity:0;
+    transform:translateX(-50%);
+    transition: 1s;
+
+}
+hr{
+    background: #fff;
+    height:2px;
+    border:0;
+    margin:15px auto;
+    width:60%;
+    
+}
+.desc p{
+    font-size: 14px;
+
+
+}
+.sections:hover    .desc{
+  bottom: 40%;
+  opacity:1;
+
+
+}
+@media screen and(max-width:770px){
+
+    .sections{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+
+    }
+    .desc p{
+        font-size: 12px;
+
+    }
+    hr{
+        margin:5px auto;
+
+    }
+    .sections:hover    .desc{
+        bottom: 25% !important;
+    
+      
+      
+      }
+}
+#testimonial{
+    width:100%;
+    padding:70px 0;
+
+}
+.testimonial-row{
+    width:80%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    flex-wrap:wrap;
+
+}
+
+.testimonial-column{
+    flex-basis: 28%;
+    padding:10px;
+    margin-bottom:30px ;
+    border-radius:5px;
+    box-shadow:0 10px 20px 3px #00968814;
+    cursor:pointer;
+    transition: transform .5s;
+
+}
+.testimonial-column p{
+    font-size: 14px;
+}
+.user{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.user img{
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 3px;
+
+}
+.user-info small{
+    color:#009688;
+}
+.testimonial-column:hover{
+    transform:translateY(-7px);
+}
+@media screen and(max-width:770px){
+    .testimonial-column{
+        flex-basis: 100%;
+    }
+}
+
+#footer{
+    padding:100px 0 20px;
+    background: #efefef;
+    position: relative;
+
+}
+.footer-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.footer-left,.footer-right{
+    flex-basis: 45%;
+    padding:10px;
+    margin-bottom: 20px;
+}
+
+.footer-right{
+    text-align: right;
+}
+.footer-row h1{
+    margin: 10px 0;
+}
+.footer-row p{
+    line-height:35px;
+
+}
+.footer-img{
+    max-width: 370px;
+    opacity:0.1;
+    position: absolute;
+    left:50%;
+    top:35%;
+    transform:translate(-50%,-50%);
+    
+}
+
+
+
+
